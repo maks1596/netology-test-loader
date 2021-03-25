@@ -18,7 +18,7 @@ internal class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launchWhenResumed {
             val data = GroupRepository.getData()
-            Log.d("MainActivity", data.toString())
+            binding.recyclerView.adapter = DataAdapter(data)
             binding.progressIndicator.hide()
         }
     }

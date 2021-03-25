@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Loader</string>
+    <string name="app_name" translatable="false">Loader</string>
+
+    <plurals name="group">
+        <item quantity="one">%d group</item>
+        <item quantity="many">%d groups</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
 </resources>
