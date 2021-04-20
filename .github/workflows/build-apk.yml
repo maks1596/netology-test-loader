@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v2.2.0
       with:
           name: app
-          path: ${{ env.SIGNED_RELEASE_FILE }}
+          path: "$SIGNED_RELEASE_FILE"
