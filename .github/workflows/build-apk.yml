@@ -24,7 +24,7 @@ jobs:
     - name: Build release APK
       run: ./gradlew assembleRelease --stacktrace
       
-    - name: Sign artifact
+    - name: Sign release APK
       id: signArtifact
       uses: r0adkll/sign-android-release@v1.0.1
       with:
@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v2.2.0
       with:
           name: app
-          path: ${{ env.SIGNED_RELEASE_FILE }}
+          path: ${{ steps.signArtifact.outputs.signedReleaseFile }}
