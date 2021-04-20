@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v2.2.0
       with:
           name: app
-          path: ${{steps.signArtifact.outputs.signedReleaseFile}}
+          path: $SIGNED_RELEASE_FILE
