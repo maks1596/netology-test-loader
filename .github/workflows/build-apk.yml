@@ -10,8 +10,6 @@ jobs:
   apk:
     name: Generate APK
     runs-on: ubuntu-latest
-    env:
-      SIGNED_RELEASE_FILE: _
 
     steps:
     - uses: actions/checkout@v2
